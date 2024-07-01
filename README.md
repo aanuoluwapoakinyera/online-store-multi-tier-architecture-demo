@@ -54,13 +54,13 @@ $ docker-compose pull
 Fire up Stan's Robot Shop with:
 
 ```shell
-$ docker-compose up
+$ docker-compose up -d
 ```
 
 If you want to fire up some load as well:
 
 ```shell
-$ docker-compose -f docker-compose.yaml -f docker-compose-load.yaml up
+$ docker-compose -f docker-compose.yaml -f docker-compose-load.yaml up -d
 ```
 
 If you are running it locally on a Linux host you can also run the Instana [agent](https://docs.instana.io/quick_start/agent_setup/container/docker/) locally, unfortunately the agent is currently not supported on Mac.
